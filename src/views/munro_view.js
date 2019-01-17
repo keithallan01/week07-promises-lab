@@ -8,12 +8,16 @@ MunroView.prototype.render = function() {
   munroName.textContent = this.munros.name;
   this.container.appendChild(munroName)
 
-  const munroHeight = document.createElement('p');
-  munroHeight.textContent = this.munros.height;
+  const munroHeight = document.createElement('li');
+  munroHeight.textContent = `Height: ${this.munros.height}`;
   this.container.appendChild(munroHeight);
 
-  const munroMeaning = document.createElement('p');
-  munroMeaning.textContent = this.munros.meaning;
+  const munroRegion = document.createElement('li');
+  munroRegion.textContent = `Region: ${this.munros.region}`;
+  this.container.appendChild(munroRegion);
+
+  const munroMeaning = document.createElement('li');
+  munroMeaning.textContent = `Meaning: ${this.munros.meaning}`;
   this.container.appendChild(munroMeaning);
 };
 
