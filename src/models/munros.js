@@ -15,6 +15,8 @@ Munros.prototype.getData = function() {
   myPromise.then((data) => {
     this.data = data;
     console.log(this.data);
+    // check that the this.data (property) is correct - this.data and then console log it to
+    // show it in the browser - and check the API is coming through in the browser console
 
     PubSub.publish('Munros:data-ready', this.data);
   })
@@ -23,9 +25,9 @@ Munros.prototype.getData = function() {
   })
 };
 
-Munros.prototype.handleDataReady = function(munros) {
-  return munros;
-};
+// Munros.prototype.handleDataReady = function(munros) {
+//   return munros;
+// };
 
 
 
