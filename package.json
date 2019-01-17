@@ -1,7 +1,6 @@
 {
   "name": "munros",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,5 +11,14 @@
   "devDependencies": {
     "webpack": "^4.5.0",
     "webpack-cli": "^2.0.14"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laceywalker/week07-promises-lab.git"
+  },
+  "bugs": {
+    "url": "https://github.com/laceywalker/week07-promises-lab/issues"
+  },
+  "homepage": "https://github.com/laceywalker/week07-promises-lab#readme",
+  "description": ""
 }
