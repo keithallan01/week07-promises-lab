@@ -3,6 +3,9 @@ const MunroView = function(container, munros) {
   this.munros = munros;
 };
 
+// we need to set a container property -- passed through from munroList - so that
+// the elements below can be attached to something, not floating around in the DOM
+
 MunroView.prototype.render = function() {
   const munroName = document.createElement('h2');
   munroName.textContent = this.munros.name;

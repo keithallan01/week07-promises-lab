@@ -13,7 +13,6 @@ MunroListView.prototype.bindEvents = function() {
   });
 };
 
-
 MunroListView.prototype.render = function() {
   this.munros.forEach((munro) => {
     const munroView = new MunroView(this.container, munro);
